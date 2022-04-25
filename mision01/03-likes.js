@@ -18,8 +18,11 @@ const likes = (numCom) => {
     } else if (numCom>=100000 && numCom<1000000){
         abr = abr.substring(0,3) + 'K'
     }
-    else if (numCom>=1000000){
+    else if (numCom>=1000000 && numCom<10000000){
         abr = abr.charAt(0) + 'M'
+    }
+    else if (numCom>=10000000 && numCom<100000000){
+        abr = abr.substring(0,2) + 'M'
     }
 
 
